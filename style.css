@@ -13,8 +13,38 @@ header{
     justify-content: center;
 }
 header img{
-    width: 62%;
+    width: 40%;
 }
+.campo_inf{
+    visibility: hidden;
+    background-color: #24171E;
+    position:fixed;
+    display: flex;
+    z-index: 1;
+    width: 50%;
+    top:2%;
+    right: 27%;
+    padding: 20px;
+    border: #05050D solid;
+    gap: 2%;
+}
+.campo_inf img{
+    width: 17em;
+}
+.detalhi_info{
+    display: flex;
+    flex-direction: column;
+}.icon{
+    width: 1%; 
+    position: relative;
+    right:  22%;
+   
+}
+.icon_close{
+    width: 5%;
+    height: 5%;
+}
+
 main{
     grid-area: main;
     display: flex;
@@ -29,7 +59,7 @@ main{
     align-items: center;
     justify-content: center;
     width: 90%;
-    gap: 34%;   
+    gap: 31%;   
      
 }
 
@@ -45,7 +75,7 @@ main{
 }
 
 #persona1{
-    /* visibility: hidden; */
+ 
 z-index: 1;
 width: 200px;
 
@@ -64,6 +94,7 @@ width: 200px;
 
 }
 .infoBasicH div{
+    visibility: hidden;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -75,18 +106,25 @@ width: 200px;
     height: 10%;
     
 }
+ #nameHuman,#nameGods{
+       
+    text-transform: uppercase;
+}
 #moreInfoH{
+       visibility: hidden;
     background-color: rgb(179, 255, 3);
     padding: 10%;
-    width: 200px;
+    width: 220px;
 }
 #moreInfoG{
+       visibility: hidden;
     background-color: rgb(179, 255, 3);
     padding: 10%;
-    width: 200px;
+    width: 220px;
 }
 
 .infoBasicG div{
+    visibility: hidden;
     text-align: center;
     align-items: center;
     justify-content: center;
