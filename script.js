@@ -52,14 +52,29 @@ let nikola  = new Competitors("./assets/Nikola_Tesla.svg","Nikola Tesla","",'Ida
 
 // deuses
 
-let thor = new Competitors("./assets/thor.png","Thor","")
-let zeus = new Competitors("./assets/zeus.svg","Zeus","")
-let poseidon = new Competitors("./assets/poseidon.svg","Poseidon","")
-let hercules = new Competitors("./assets/hercules.svg","Hércules","")
-let shiva = new Competitors("./assets/shiva.svg","Shiva","")
-let zeroFuku = new Competitors("./assets/zerofuku.svg","Zerofuku","")
-let hades = new Competitors("./assets/hades.svg","Hades","")
-let belzebu = new Competitors("./assets/belzebu.svg","Belzebu","")
+let thor = new Competitors("./assets/thor.png","Thor","",'Idade: Pelo menos Milênios.','Sexo: Masculino','Thor é uma divindade proeminente no panteão nórdico, sendo o deus nórdico do trovão, e também é frequentemente considerado o guerreiro e deus mais forte dos nórdicos. Ele é conhecido como o " Thunder Berserker "','Mjölnir (Destruidor) (雷槌ミョルニル, Myoruniru ): A arma primária de Thor, um enorme martelo maior que seu corpo. O martelo é principalmente coberto de cinza com padrões dourados semelhantes a veias e vários revestimentos marrons semelhantes a carapaças, Járngreipr (manoplas de ferro) (鉄の手袋ヤールングレイプル, Yārungureipuru ): Um par de luvas capaz de resistir a qualquer ataque. Segundo a lenda, Thor deve usar Járngreipr para proteger sua mão do calor do Mjölnir. Mas isso é um mal-entendido','./assets/thor_info.svg')
+
+
+let zeus = new Competitors("./assets/zeus.svg","Zeus","",'Sexo: Masculino','Idade Éon (Possui mais de um bilhão de anos.)','Zeus estava encarregado do conselho de Deuses como seu presidente, discutindo se deveria ou não exterminar a humanidade. Todos os deuses concordam, mas Brunhilde foi a única que se opôs e apontou uma cláusula que dava aos humanos uma chance de lutar. Todos os deuses se opuseram à ideia de Brunhilde de Ragnarök até que ela insultou seu orgulho, enfurecendo Zeus que mata seu dragão de estimação e usa seu martelo para destruir a maior parte do chão para iniciar Ragnarök.','Punhos e Tecnicas','./assets/zeus_info.svg')
+
+
+let poseidon = new Competitors("./assets/poseidon.svg","Poseidon","",'Sexo: Masculino','Idade Éon (Possui mais de 1 bilhão de anos.)','Poseidon nasceu como o terceiro irmão dos deuses gregos mais antigos. Ele parecia insensível e apático desde o nascimento, sem prestar atenção ao irmão mais velho, Adamas, para seu desgosto. Quando Adamas tentou derrubar Zeus, Poseidon o matou sem esforço e apagou sua memória da história. Hermes, que testemunhou o incidente, espalhou o boato de que havia um traidor entre os deuses gregos. Apenas um punhado de deuses sabem sobre o incidente e por que Adamas foi removido da história.','Tridente: Uma grande arma em forma de lança com três pontas afiadas em sua extremidade. Poseidon geralmente empurra seu tridente para frente para espetar seus oponentes.', './assets/poseidon_info.svg')
+
+
+let hercules = new Competitors("./assets/hercules.svg","Hércules","",'Sexo: Masculino','Idade: 4000+',
+'Hércules é uma divindade proeminente no Panteão grego , sendo o Deus da Fortitude (不屈の闘神, Fukutsu no Tōjin ). Ele também é um dos poucos seres divinos, junto com Buda e as Valquírias , que não são a favor do fim da Humanidade Heimdall o descreve como o " Enviado da Justiça " (正義の使者, Seigi no Shisha ) tanto para os Deuses quanto para os Humanos, Heracles era anteriormente um humano com o nome de " Alcides " ( ア ル ケ イ デ ス , Arukeidesu ), vindo da Grécia Antiga e ascendeu à Divindade ao beber a Ambrosia.','Lion Club : Um clube de prata mágico que assume a forma de uma variedade de animais, incluindo um leão, uma águia e um touro. Cada vez que Heracles usa uma de suas técnicas de 12 Trabalhos para mudar a forma de seu clube, as tatuagens em seu corpo se espalham, aproximando-o da morte.','./assets/hercules_info.svg')
+
+
+let shiva = new Competitors("./assets/shiva.svg","Shiva","",'Sexo: Masculino','Idade: 4000+','Shiva é uma divindade proeminente e líder do Panteão Hindu Ele é um Deus Chefe e conhecido como o " Bhairava do Cosmos " (Uchū no Bairava ), o " Deus Mais Forte da Destruição " (Saikyō no Hakaishin ) e o maior lutador do Céu .','Tesouro Escondido do Mundo Indiano dos Deuses (Indo Shinkai no Hihō )  Conhecida como "Dança de Guerra de Shiva" (Shiva no Hissatsu Buyō ),Tandava (Renascimento do Samsara) (Tāndava ) Devido a sua dança intensa, o corpo de Shiva fica superaquecido e entra em combustão, Krittivasa (Dança Flamejante da Garra do Tigre) (Kurittivāsasu )  Shiva pula no ar e desfere um chute poderoso enquanto queima simultaneamente seus pés, eva Loka (Dança da Chama do Ato Final) (Dēva Rōka ) Um poderoso chute giratório usado por Shiva,','./assets/shiva_info.svg')
+
+let zeroFuku = new Competitors("./assets/zerofuku.svg","Zerofuku","",'Sexo: Masculino',
+'Idade: 2500+','Zerofuku é o deus do infortúnio. Ele também é a fusão dos Sete Deuses da Sorte , sendo sua forma original antes de se separarem no passado. O nome "Zerofuku" se traduz em "fortuna zero", mas também pode ser interpretado como "infortúnio".','Misery Cleaver: Zerofuku empunha um machado de batalha divino conhecido como "Misery Cleaver", que ele criou de sua própria carne, sangue e ossos. O Misery Cleaver era inicialmente um machado de batalha de tamanho normal, que tinha um cabo de cor clara e tentáculos carnudos pretos saindo da maior parte do machado, Sword Transformation: O Misery Cleaver assume a forma de uma forma de espinha semelhante a uma espada com dezenas de pontas afiadas, Storm Formation: O Misery Cleaver assume a forma de uma chuva de incontáveis lâminas conectadas a um único cabo. Cada lâmina parece ter vida própria, ','./assets/zerofubu_info.svg')
+
+let hades = new Competitors("./assets/hades.svg","Hades","", 'Sexo: Masculino', 'Idade: Eras', 'Ele é uma divindade proeminente dentro do Panteão grego , sendo o " Rei do Netherworld " (冥界の王, Meikai no Ō ). Hades também é considerado como " O Deus em quem os outros deuses mais confiam " (神が最も信頼する神, Kami ga Mottomo Shinrai suru Kami ).', 'Bidente (二叉槍バイデント, Baidento ): Arma pessoal de Hades que consiste em duas pontas de prata retorcidas, uma arma de haste roxo-azulada escura e uma ponta arredondada de prata na outra ponta, Ichor: Desmos (Lança do Destino de Quatro Sangues) (宿命の四血槍イーコール・デスモズ, Īkōru Desumosu ) O trunfo de Hades. Ao infundir Pluto Ichor em seu bidente, Hades atualiza sua arma em Ichor: Desmos , que consiste em duas pontas afiadas com uma longa lâmina passando pelo meio e todas convergem em uma ponta manchada de sangue.','./assets/hades_info.svg')
+
+let belzebu = new Competitors("./assets/belzebu.svg","Belzebu","",'Sexo: Masculino','Desconhecido (Eons, possivelmente)','Belzebu é uma divindade proeminente no Panteão Filisteu e no Panteão Abraâmico . Ele é conhecido por vários títulos. Para os humanos , ele é comumente conhecido como o " Senhor das Moscas " ( Hae no Ō ). Para os Deuses, ele às vezes é conhecido como " Anátema " (Anatema ), o que indica que ele é o amaldiçoado por Satanás.Ele também carrega outros títulos como o " Sacerdote da Gula " (Bōshoku no Shisai ), o " Regente dos Espíritos Malignos " ( Akuryō-domo no Shihai-sha ), o " Deus da Escuridão " (Yami no Kami ) e ele é adorado pelos cananeus como " Baal-Zebul " (Bāru-Zeburu ).','O Cajado de Apomyius ( Apomyuiosu no Tsue ): Quando se trata de batalha, a arma de escolha de Belzebu é um cajado que consiste em uma caveira de prata como cabo, haste vermelha e ponta arredondada de prata.','./assets/belzebu_info.svg')
+
+
 
 
 
@@ -305,13 +320,85 @@ infoBasicH[3].addEventListener('click',()=>{
                 fullInformation[4].innerHTML = nikola.summaryHistory
                 fullInformation[5].innerHTML = nikola.equip
                 fullInformation[6].src = nikola.img_info
-                
+              
     }
 
 })
+
+infoBasicG[3].addEventListener('click', ()=>{
+    fullInformation[0].style = "visibility: visible;"
+    switch(GodsNumber){
+        case 1:
+            fullInformation[1].innerHTML = thor.name
+            fullInformation[2].innerHTML = thor.age
+            fullInformation[3].innerHTML = thor.sex
+            fullInformation[4].innerHTML = thor.summaryHistory
+            fullInformation[5].innerHTML = thor.equip
+            fullInformation[6].src = thor.img_info
+            break
+            case 2:
+                fullInformation[1].innerHTML = zeus.name
+                fullInformation[2].innerHTML = zeus.age
+                fullInformation[3].innerHTML = zeus.sex
+                fullInformation[4].innerHTML = zeus.summaryHistory
+                fullInformation[5].innerHTML = zeus.equip
+                fullInformation[6].src = zeus.img_info
+                break
+                case 3:
+                fullInformation[1].innerHTML = poseidon.name
+                fullInformation[2].innerHTML = poseidon.age
+                fullInformation[3].innerHTML = poseidon.sex
+                fullInformation[4].innerHTML = poseidon.summaryHistory
+                fullInformation[5].innerHTML = poseidon.equip
+                fullInformation[6].src = poseidon.img_info
+                break
+                case 4:
+                fullInformation[1].innerHTML = hercules.name
+                fullInformation[2].innerHTML = hercules.age
+                fullInformation[3].innerHTML = hercules.sex
+                fullInformation[4].innerHTML = hercules.summaryHistory
+                fullInformation[5].innerHTML = hercules.equip
+                fullInformation[6].src = hercules.img_info
+                break
+                case 5:
+                fullInformation[1].innerHTML = shiva.name
+                fullInformation[2].innerHTML = shiva.age
+                fullInformation[3].innerHTML = shiva.sex
+                fullInformation[4].innerHTML = shiva.summaryHistory
+                fullInformation[5].innerHTML = shiva.equip
+                fullInformation[6].src = shiva.img_info
+                break
+                case 6:
+                fullInformation[1].innerHTML = zeroFuku.name
+                fullInformation[2].innerHTML = zeroFuku.age
+                fullInformation[3].innerHTML = zeroFuku.sex
+                fullInformation[4].innerHTML = zeroFuku.summaryHistory
+                fullInformation[5].innerHTML = zeroFuku.equip
+                fullInformation[6].src = zeroFuku.img_info
+                break
+                case 7:
+                fullInformation[1].innerHTML = hades.name
+                fullInformation[2].innerHTML = hades.age
+                fullInformation[3].innerHTML = hades.sex
+                fullInformation[4].innerHTML = hades.summaryHistory
+                fullInformation[5].innerHTML = hades.equip
+                fullInformation[6].src = hades.img_info
+                break
+                case 8:
+                fullInformation[1].innerHTML = belzebu.name
+                fullInformation[2].innerHTML = belzebu.age
+                fullInformation[3].innerHTML = belzebu.sex
+                fullInformation[4].innerHTML = belzebu.summaryHistory
+                fullInformation[5].innerHTML = belzebu.equip
+                fullInformation[6].src = belzebu.img_info
+                break
+    }
+})
+
 deleteInformationBnt.addEventListener('click',()=>{
     fullInformation[0].style = "visibility: hidden;"
 })
+
 
 
 function result(){
