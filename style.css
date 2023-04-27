@@ -22,8 +22,8 @@ header img{
     display: flex;
     z-index: 1;
     width: 50em;
-    top:3em;
-    right: 31em;
+    top:1em;
+    right: 17em;
     padding: 20px;
     border: #05050D solid;
     gap: 2%;
@@ -31,18 +31,19 @@ header img{
 }
 .campo_inf p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 0.7em;
     line-height: 1.5;
     margin-bottom: 0.4em;
+    color: rgb(230, 229, 229);
 }
 .campo_inf h2 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 h2 {
     margin-bottom: 0.4em;
 }
 .campo_inf img{
-    width: 20em;
+    width: 18em;
 }
 .detalhi_info{
     display: flex;
@@ -50,7 +51,7 @@ h2 {
 }.icon{
     width: 0.4em; 
     position: relative;
-    right:  9em;
+    right:  10em;
    
 }
 .icon_close{
@@ -72,8 +73,8 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 110em;
-    gap: 51.9em;   
+    width: 76em;
+    gap: 26em;   
      
 }
 
@@ -90,13 +91,13 @@ main{
 
 #persona1{
 z-index: 1;
-width: 15em;
+width: 11em;
 
      
 }
 #persona2{
     z-index: 1;
-    width: 15em;
+    width: 11em;
 }
 .infoBasicH{
     display: flex;
@@ -171,7 +172,7 @@ width: 15em;
      
  } 
  .humanLine img ,.humanLine1 img, .humanLine2 img{
-    width: 6em;
+    width: 4.2em;
     
  }
  .selectGod{
@@ -183,7 +184,7 @@ width: 15em;
  .selectCharacter{
     display: flex;
     width: 100%;
-    gap: 64%;
+    gap: 70em;
     background-color: #24171E;
     padding: 20px;
     
@@ -198,7 +199,7 @@ width: 15em;
     justify-content: right;
  }
  .godLine img ,.godLine1 img, .godLine2 img{
-    width: 6em;
+    width: 4.2em;
     
  }
  footer{
@@ -370,3 +371,151 @@ width: 15em;
         
      }
  }
+
+ @media (max-width:585px) {
+    .local{
+        display: flex;
+      background-image: url("./assets/fundoManga.svg");
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 30.1em;
+        gap: 0.1em;   
+         
+    }
+
+    #persona1{
+        z-index: 1;
+        width: 7em;
+        
+             
+        }
+        #persona2{
+            z-index: 1;
+            width: 7em;
+        }
+    
+        
+     #nameHuman{
+        font-size: 1.1em;
+     }
+     #moreInfoH{
+        width: 8em;
+     }
+     #moreInfoG{
+        width: 8em;
+     }
+     #nameGods{
+        font-size: 1.1em;
+     }
+     #nameHuman{
+        font-size: 0.9em;
+     }
+     #nameGods{
+        font-size: 0.9em;
+     }
+    
+     .humanLine img ,.humanLine1 img, .humanLine2 img{
+        width: 3.1em;
+        
+     }
+     .godLine img ,.godLine1 img, .godLine2 img{
+        width: 3.1em;
+        
+     }
+     .campo_inf{
+        visibility: hidden;
+        background-color: #271f23;
+        position:fixed;
+        display: flex;
+        z-index: 1;
+        width: 30em;
+        top:2em;
+        right: 0.5em;
+        padding: 10px;
+        border: #05050D solid;
+        gap: 2%;
+    
+    }
+    .campo_inf p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.6em;
+        line-height: 1.5;
+        margin-bottom: 0.4em;
+     
+    }
+    .campo_inf h2 {
+      font-size: 1em;
+        text-transform: uppercase;
+    }
+    .campo_inf img{
+        width: 14em;
+    }  
+
+    .icon{
+        width: 0.4em; 
+        position: relative;
+        right:  7.5em;
+       
+    }
+    .icon_close{
+        width: 4%;
+        height: 4%;
+    }
+
+    footer img{
+        width: 5em;
+     }
+     footer section{
+        font-size: 1.5em;
+        color: #ffff;
+       
+     }
+}
+
+@media (max-width:375px) {
+    .local{
+        width: 22em;
+        gap: 0em;   
+         
+    }
+    #persona1{
+        z-index: 1;
+        width: 5em;
+        
+             
+        }
+        #persona2{
+            z-index: 1;
+            width: 5.2em;
+        }
+
+        #nameHuman{
+            font-size: 0.9em;
+         }
+         #moreInfoH{
+            width: 6em;
+         }
+         #moreInfoG{
+            width: 6em;
+         }
+         #nameGods{
+            font-size: 0.9em;
+         }
+         #nameHuman{
+            font-size: 0.8em;
+         }
+         #nameGods{
+            font-size: 0.8em;
+         }
+         .humanLine img ,.humanLine1 img, .humanLine2 img{
+            width: 2.8em;
+            
+         }
+         .godLine img ,.godLine1 img, .godLine2 img{
+            width: 2.8em;
+            
+         }
+}
+
+ 
