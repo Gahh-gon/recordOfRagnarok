@@ -5,6 +5,7 @@
 }
 body{
     grid-template-areas: "header header" "main main" "footer footer";
+    
 }
 header{
     grid-area: header; 
@@ -65,6 +66,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
   
 }
 .local{
@@ -208,6 +210,7 @@ width: 11em;
     align-items: center;
     justify-content: center;
     background-color: #05050D;
+    height: 6.6em;
  }
  footer img{
     width: 120px;
@@ -228,9 +231,57 @@ width: 11em;
         padding: 20px;
         
      }
+     
  }
  
-
+ @media (max-width: 936px) {
+    .local{
+        display: flex;
+      background-image: url("./assets/fundoManga.svg");
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 57em;
+        gap: 7em;   
+         
+    }
+    .selectCharacter{
+        display: flex;
+        width: 100%;
+        gap: 27em;
+        background-color: #24171E;
+        padding: 20px;
+        
+     }
+     .campo_inf{
+        visibility: hidden;
+        background-color: #271f23;
+        position:fixed;
+        display: flex;
+        z-index: 1;
+        width: 48em;
+        top:10%;
+        right: 5em;
+        padding: 20px;
+        border: #05050D solid;
+        gap: 3%;
+    
+    }
+     .campo_inf  h2 {
+           font-size: 1.9em;
+        }
+        .campo_inf p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9em;
+            line-height: 1.2em;
+            margin-bottom: 0.5em;
+            
+        }
+        .campo_inf img{
+            width: 20em;
+        }
+ }
+ 
  @media (max-width: 900px) {
     .local{
         display: flex;
@@ -431,7 +482,7 @@ width: 11em;
         z-index: 1;
         width: 30em;
         top:2em;
-        right: 0.5em;
+        right: 0.1em;
         padding: 10px;
         border: #05050D solid;
         gap: 2%;
@@ -503,10 +554,10 @@ width: 11em;
             font-size: 0.9em;
          }
          #nameHuman{
-            font-size: 0.8em;
+            font-size: 0.7em;
          }
          #nameGods{
-            font-size: 0.8em;
+            font-size: 0.7em;
          }
          .humanLine img ,.humanLine1 img, .humanLine2 img{
             width: 2.8em;
@@ -515,6 +566,9 @@ width: 11em;
          .godLine img ,.godLine1 img, .godLine2 img{
             width: 2.8em;
             
+         }
+         footer{
+            height: 9.9em;
          }
 }
 
