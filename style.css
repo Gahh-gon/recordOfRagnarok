@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 body{
-    grid-template-areas: "header header" "main main" "footer footer";
-    
+    display: grid;
+    grid-template-areas: "header header" "main main" "footer footer"; 
+    grid-template-columns: 3fr;
+    grid-template-rows: 20vh ;
+
 }
+
+
 header{
     grid-area: header; 
     display: flex;
@@ -14,10 +19,182 @@ header{
     justify-content: center;
 }
 header img{
-    width: 40%;
+    width: 20em;
 }
-.campo_inf{
+
+
+
+main{
+    grid-area: main;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    
+}
+
+.local{
+    display: flex;
+  background-image: url("./assets/fundoManga.svg");
+  background-size:cover;
+  background-repeat: no-repeat;
+    width: 80em;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    gap: 549px;
+  
+     
+}
+
+
+
+
+ .human, .Gods{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   
+}
+
+
+#persona1{
+z-index: 1;
+width: 142px;
+
+     
+}
+#persona2{
+    z-index: 1;
+    width:142px;
+}
+.infoBasicH{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.infoBasicH div{
     visibility: hidden;
+    text-align: center;
+    border-radius: 0.5em;
+    background-color: rgb(179, 255, 3);
+    padding: 1em;
+    width: 10em;
+}
+.infoBasicH{
+    display: flex;
+    flex-direction: column;
+    gap: 7em;
+}
+.infoBasicH h2{
+    font-size: 1.4em;
+
+}
+ #nameHuman,#nameGods{
+       
+    text-transform: uppercase;
+}
+#moreInfoH{
+       visibility: hidden;
+    background-color: rgb(179, 255, 3);
+    padding: 1.5em;
+    width: 14em;
+    text-align: center;
+}
+#moreInfoG{
+       visibility: hidden;
+    background-color: rgb(179, 255, 3);
+    padding: 1.5em;
+    width: 14em;
+    text-align: center;
+}
+
+.infoBasicG div{
+    visibility: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    background-color: rgb(179, 255, 3);
+    padding: 1em;
+    width: 10em;
+
+}
+.infoBasicG{
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
+}
+
+
+.selectCharacter{
+    display: flex;
+    gap: 53.9em;
+    background-color: #24171E;
+    padding: 1em;
+     }
+
+.selectHuman{
+   
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 0.6em;
+}
+
+ .humanLine,.humanLine1, .humanLine2{
+    display: flex;
+    gap: 0.8em;
+    
+     
+ } 
+ .humanLine img ,.humanLine1 img, .humanLine2 img{
+    width: 4.2em;
+    
+ }
+ .selectGod{
+    display: flex;
+    /* justify-content: left; */
+    flex-direction: column;
+    gap: 0.6em;
+ }
+ 
+
+
+ .godLine,.godLine1, .godLine2{
+    display: flex;
+    gap: 0.8em;
+      
+ } 
+ .godLine2{
+    justify-content: right;
+ }
+ .godLine img ,.godLine1 img, .godLine2 img{
+    width: 4.2em;
+    
+ }
+ footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #05050D;
+ }
+ footer img{
+    width: 120px;
+ }
+ footer p{
+    font-size: 2em;
+    color: #ffff;
+   
+ }
+
+ .campo_inf{
+    visibility: collapse;
     background-color: #271f23;
     position:fixed;
     display: flex;
@@ -25,9 +202,8 @@ header img{
     width: 50em;
     top:1em;
     right: 17em;
-    padding: 20px;
+    padding: 5em;
     border: #05050D solid;
-    gap: 2%;
 
 }
 .campo_inf p {
@@ -60,479 +236,383 @@ h2 {
     height: 5%;
 }
 
-main{
-    grid-area: main;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-  
-}
-.local{
-    display: flex;
-  background-image: url("./assets/fundoManga.svg");
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 76em;
-    gap: 26em;   
-     
-}
 
-
-
- .human, .Gods{
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-   
-}
-
-#persona1{
-z-index: 1;
-width: 11em;
-
-     
-}
-#persona2{
-    z-index: 1;
-    width: 11em;
-}
-.infoBasicH{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-.infoBasicH div{
-    visibility: hidden;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    margin-bottom: 100%;
-    background-color: rgb(179, 255, 3);
-    padding: 10%;
-    width: 80%;
-    height: 10%;
-    
-}
- #nameHuman,#nameGods{
+@media(max-width:768px){
+    .local{
        
-    text-transform: uppercase;
-}
-#moreInfoH{
-       visibility: hidden;
-    background-color: rgb(179, 255, 3);
-    padding: 10%;
-    width: 14em;
-    text-align: center;
-}
-#moreInfoG{
-       visibility: hidden;
-    background-color: rgb(179, 255, 3);
-    padding: 10%;
-    width: 14em;
-    text-align: center;
-}
-
-.infoBasicG div{
-    visibility: hidden;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    margin-bottom: 100%;
-    background-color: rgb(179, 255, 3);
-    padding: 10%;
-    width: 80%;
-    height: 10%;
-}
-.infoBasicG{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.selectHuman{
-   
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-    gap: 0.6em;
-}
-
- .humanLine,.humanLine1, .humanLine2{
-    display: flex;
-    gap: 0.8em;
-    
-     
- } 
- .humanLine img ,.humanLine1 img, .humanLine2 img{
-    width: 4.2em;
-    
- }
- .selectGod{
-    display: flex;
-    /* justify-content: left; */
-    flex-direction: column;
-    gap: 0.6em;
- }
- .selectCharacter{
-    display: flex;
-    width: 100%;
-    gap: 70em;
-    background-color: #24171E;
-    padding: 20px;
-    
- }
-
- .godLine,.godLine1, .godLine2{
-    display: flex;
-    gap: 0.8em;
+        width: 40em;
+        height: 280px;
+        gap: 191px;
       
- } 
- .godLine2{
-    justify-content: right;
- }
- .godLine img ,.godLine1 img, .godLine2 img{
-    width: 4.2em;
-    
- }
- footer{
-    grid-area: footer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #05050D;
-    height: 6.6em;
- }
- footer img{
-    width: 120px;
- }
- footer section{
-    font-size: 2em;
-    color: #ffff;
-   
- }
-
- @media (max-width: 1548px) {
-    .selectCharacter{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        gap: 50em;
-        background-color: #24171E;
-        padding: 20px;
-        
-     }
-     
- }
- 
- @media (max-width: 936px) {
-    .local{
-        display: flex;
-      background-image: url("./assets/fundoManga.svg");
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 57em;
-        gap: 7em;   
          
     }
-    .selectCharacter{
-        display: flex;
-        width: 100%;
-        gap: 27em;
-        background-color: #24171E;
-        padding: 20px;
-        
-     }
-     .campo_inf{
-        visibility: hidden;
-        background-color: #271f23;
-        position:fixed;
-        display: flex;
-        z-index: 1;
-        width: 48em;
-        top:10%;
-        right: 5em;
-        padding: 20px;
-        border: #05050D solid;
-        gap: 3%;
     
-    }
-     .campo_inf  h2 {
-           font-size: 1.9em;
-        }
-        .campo_inf p {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 0.9em;
-            line-height: 1.2em;
-            margin-bottom: 0.5em;
-            
-        }
-        .campo_inf img{
-            width: 20em;
-        }
- }
- 
- @media (max-width: 900px) {
-    .local{
-        display: flex;
-      background-image: url("./assets/fundoManga.svg");
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 50em;
-        gap: 4.5em;   
-         
-    }
     #persona1{
         z-index: 1;
-        width: 9em;
+        width: 100px;
         
              
         }
         #persona2{
             z-index: 1;
-            width: 9em;
-        }
-        .selectCharacter{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            gap: 16%;
-            background-color: #24171E;
-            padding: 20px;
-            
-         }
-         .campo_inf{
-            visibility: hidden;
-            background-color: #271f23;
-            position:fixed;
-            display: flex;
-            z-index: 1;
-            width: 39em;
-            top:2%;
-            right: 8em;
-            padding: 20px;
-            border: #05050D solid;
-            gap: 3%;
-        
-        }
-
-        .campo_inf  h2 {
-           font-size: 1.9em;
-        }
-        .campo_inf p {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 0.8em;
-            line-height: 1.4;
-            margin-bottom: 0.5em;
-            
-        }
- }
- 
- @media (max-width:820px) {
-
-    .local{
-        display: flex;
-      background-image: url("./assets/fundoManga.svg");
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 46em;
-        gap: 0.5em;   
-         
-    }
-    #persona1{
-        z-index: 1;
-        width: 9em;
-        
-             
-        }
-        #persona2{
-            z-index: 1;
-            width: 9em;
-        }
-
-        .selectCharacter{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            gap: 10%;
-            background-color: #24171E;
-            padding: 20px;
-            
-         }
-
-         
-        
- }
-
- @media (max-width:666.67px) {
-    .local{
-        display: flex;
-      background-image: url("./assets/fundoManga.svg");
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 37em;
-        gap: 0.5em;   
-         
-    }
-
-    #persona1{
-        z-index: 1;
-        width: 8.5em;
-        
-             
-        }
-        #persona2{
-            z-index: 1;
-            width: 8.5em;
-        }
-    
-        
-     #nameHuman{
-        font-size: 1.1em;
-     }
-     #moreInfoH{
-        width: 10em;
-     }
-     #moreInfoG{
-        width: 9.6em;
-     }
-     #nameGods{
-        font-size: 1.1em;
-     }
-    
-     .humanLine img ,.humanLine1 img, .humanLine2 img{
-        width: 4.5em;
-        
-     }
-     .godLine img ,.godLine1 img, .godLine2 img{
-        width: 4.5em;
-        
-     }
- }
-
- @media (max-width:585px) {
-    .local{
-        display: flex;
-      background-image: url("./assets/fundoManga.svg");
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 30.1em;
-        gap: 0.1em;   
-         
-    }
-
-    #persona1{
-        z-index: 1;
-        width: 7em;
-        
-             
-        }
-        #persona2{
-            z-index: 1;
+            width:100px;
+        }   
+        .infoBasicH div{
+            padding: 1em;
             width: 7em;
         }
-    
+        .infoBasicH{
+            gap: 4em;
+        }
+        .infoBasicH h2{
+            font-size: 1em;
         
-     #nameHuman{
-        font-size: 1.1em;
-     }
-     #moreInfoH{
-        width: 8em;
+        }
+        
+        .infoBasicG div{
+            padding: 1em;
+            width: 7em;
+        }
+        .infoBasicG{
+            gap: 4em;
+        }
+        .infoBasicG h2{
+            font-size: 1em;
+        
+        }
+        #moreInfoH{     
+         padding: 1em;
+         width: 10em;
+         font-size:0.8em;
      }
      #moreInfoG{
-        width: 8em;
-     }
-     #nameGods{
-        font-size: 1.1em;
-     }
-     #nameHuman{
-        font-size: 0.9em;
-     }
-     #nameGods{
-        font-size: 0.9em;
-     }
-    
-     .humanLine img ,.humanLine1 img, .humanLine2 img{
-        width: 3.1em;
+            
+         padding: 1em;
+         width: 10em;
+         font-size:0.8em;
         
      }
-     .godLine img ,.godLine1 img, .godLine2 img{
-        width: 3.1em;
+        .selectCharacter{
+            gap: 26em;
+        }
         
-     }
-     .campo_inf{
-        visibility: hidden;
-        background-color: #271f23;
-        position:fixed;
-        display: flex;
-        z-index: 1;
-        width: 30em;
-        top:2em;
-        right: 0.1em;
-        padding: 10px;
-        border: #05050D solid;
-        gap: 2%;
-    
-    }
-    .campo_inf p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.6em;
-        line-height: 1.5;
-        margin-bottom: 0.4em;
-     
-    }
-    .campo_inf h2 {
-      font-size: 1em;
-        text-transform: uppercase;
-    }
-    .campo_inf img{
-        width: 14em;
-    }  
-
-    .icon{
-        width: 0.4em; 
-        position: relative;
-        right:  7.5em;
+             .humanLine img ,.humanLine1 img, .humanLine2 img{
+                width: 2.5em;
+                
+             }
+            
+            
+             .godLine img ,.godLine1 img, .godLine2 img{
+                width: 2.5em;
+                
+             }
+             
+        }
+        @media(max-width:500px){
+            
+            .local{
        
-    }
-    .icon_close{
-        width: 4%;
-        height: 4%;
-    }
-
-    footer img{
-        width: 5em;
-     }
-     footer section{
-        font-size: 1.5em;
-        color: #ffff;
+                width: 30em;
+                height: 220px;
+                gap: 72px;
+              
+                 
+            }
+            #persona1{
+                z-index: 1;
+                width: 77px;
+                
+                     
+                }
+                #persona2{
+                    z-index: 1;
+                    width:77px;
+                }   
+            
+            .selectCharacter{
+                gap: 11em;
+            }
+            footer img{
+                width:90px;
+            }
+               
+        }
+        @media (max-width:425px) {
+            .local{
        
-     }
-}
+                width: 25em;
+                height: 197px;
+                gap: 6px;
+                 
+            }
 
-@media (max-width:375px) {
+            #persona1{
+                z-index: 1;
+                width: 69px;
+                
+                     
+                }
+                #persona2{
+                    z-index: 1;
+                    width:69px;
+                }   
+                
+            .selectCharacter{
+                gap: 6.4em;
+            }
+        }
+        @media(max-width:375px){
+            .local{
+       
+                width: 21em;
+                height: 183px;
+                gap: 14px;
+              
+                 
+            }
+            #persona1{
+                z-index: 1;
+                width: 65px;
+                
+                     
+                }
+                #persona2{
+                    z-index: 1;
+                    width:65px;
+                }   
+            .selectCharacter{
+                gap: 3.2em;
+            }
+            .infoBasicH div{
+                padding: 1em;
+                width: 6em;
+            }
+            .infoBasicH{
+                gap: 3em;
+            }
+            .infoBasicH h2{
+                font-size: 0.7em;
+            
+            }
+            
+            .infoBasicG div{
+                padding: 1em;
+                width: 6em;
+            }
+            .infoBasicG{
+                gap: 3em;
+            }
+            .infoBasicG h2{
+                font-size: 0.7em;
+            
+            }
+            #moreInfoH{     
+                padding: 1em;
+                width: 8em;
+                font-size:0.7em;
+            }
+            #moreInfoG{
+                   
+                padding: 1em;
+                width: 8em;
+                font-size:0.7em;
+               
+            }
+            footer img{
+                width: 80px;
+             }
+             footer p{
+                font-size: 1.4em; 
+             }
+        }
+       
+        @media(max-width:320px){
+            .local{
+       
+                width: 20em;
+                height: 185px;
+                gap: 10px;
+              
+                 
+            }
+            #persona1{
+                z-index: 1;
+                width: 65px;
+                
+                     
+                }
+                #persona2{
+                    z-index: 1;
+                    width:65px;
+                }   
+
+                .infoBasicH div{
+                    padding: 1em;
+                    width: 5em;
+                }
+                .infoBasicH{
+                    gap: 3em;
+                }
+                .infoBasicH h2{
+                    font-size: 0.6em;
+                
+                }
+                
+                .infoBasicG div{
+                    padding: 1em;
+                    width: 5em;
+                }
+                .infoBasicG{
+                    gap: 3em;
+                }
+                .infoBasicG h2{
+                    font-size: 0.6em;
+                
+                }
+                #moreInfoH{     
+                 padding: 0.9em;
+                 width: 7em;
+                 font-size:0.8em;
+             }
+             #moreInfoG{
+                    
+                 padding: 0.9em;
+                 width: 7em;
+                 font-size:0.8em;
+                
+             }
+             .selectCharacter{
+                gap: 1em;
+            }
+            .humanLine img ,.humanLine1 img, .humanLine2 img{
+                width: 2.3em;
+                
+             }
+            
+            
+             .godLine img ,.godLine1 img, .godLine2 img{
+                width: 2.3em;
+                
+             }
+             footer{
+                height: 90px;
+             }
+             footer img{
+                width: 80px;
+             }
+             footer p{
+                font-size: 1.5em; 
+             }
+             
+        }
+
+ /* @media (max-width:500px) {
     .local{
-        width: 22em;
-        gap: 0em;   
+
+        width: 29em;
+        height: 17em;
+        gap: 1em;   
          
     }
     #persona1{
         z-index: 1;
-        width: 5em;
+        width: 6em;
+        
+             
+        }
+        #persona2{
+            z-index: 1;
+            width: 6em;
+        }
+
+        .infoBasicG div{
+           
+    
+            padding: 1em;
+            width: 8em;
+            height: 4.5em;
+        }
+        .infoBasicG{
+            display: flex;
+            flex-direction: column;
+            gap: 5em;
+        }
+        .infoBasicG h2{
+            font-size: 1em;
+        
+        }
+       
+     #moreInfoG{
+         
+         padding: 1.5em;
+         width: 8em;
+         text-align: center;
+         font-size: 0.9em;
+     }
+
+    
+    .infoBasicH div{
+    
+        padding: 1em;
+        width: 8em;
+    }
+    .infoBasicH{
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+    }
+    .infoBasicH h2{
+        font-size: 1em;
+    
+    }
+
+     #moreInfoH{
+        visibility: hidden;
+     background-color: rgb(179, 255, 3);
+     padding: 1.5em;
+     width: 8em;
+     text-align: center;
+     font-size: 0.9em;
+ }
+
+    .selectCharacter{
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 8.9em;
+        background-color: #24171E;
+        padding: 20px;
+         }
+         
+         .selectCharacter img{
+            width:2.6em;
+         }
+         
+ }
+ @media (max-width:414px) {
+
+    .local{
+
+        width: 22.5em;
+        height: 14.6em;
+        gap: 2.3em;   
+         
+    }
+    
+ }
+ @media (max-width: 375px) {
+    .local{
+
+        width: 22.5em;
+        height: 14.6em;
+        gap: 2.3em;   
+         
+    }
+    #persona1{
+        z-index: 1;
+        width: 5.2em;
         
              
         }
@@ -541,35 +621,74 @@ width: 11em;
             width: 5.2em;
         }
 
-        #nameHuman{
-            font-size: 0.9em;
-         }
-         #moreInfoH{
-            width: 6em;
-         }
-         #moreInfoG{
-            width: 6em;
-         }
-         #nameGods{
-            font-size: 0.9em;
-         }
-         #nameHuman{
+        .infoBasicG div{
+           
+    
+            padding: 1em;
+            width: 5em;
+    
+           
+        }
+        .infoBasicG{
+            display: flex;
+            flex-direction: column;
+            gap: 5em;
+        }
+        .infoBasicG h2{
             font-size: 0.7em;
-         }
-         #nameGods{
-            font-size: 0.7em;
-         }
-         .humanLine img ,.humanLine1 img, .humanLine2 img{
-            width: 2.8em;
-            
-         }
-         .godLine img ,.godLine1 img, .godLine2 img{
-            width: 2.8em;
-            
-         }
-         footer{
-            height: 9.9em;
-         }
-}
+        
+        }
+       
+     #moreInfoG{
+         
+         padding: 1.5em;
+         width: 7em;
+         text-align: center;
+         font-size: 0.7em;
+     }
 
+     .infoBasicH div{
+    
+        padding: 1em;
+        width: 5em;
+    
+        
+    }
+    .infoBasicH{
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+    }
+    .infoBasicH h2{
+        font-size: 0.7em;
+    
+    }
+
+     #moreInfoH{
+        visibility: hidden;
+     background-color: rgb(179, 255, 3);
+     padding: 1.5em;
+     width: 7em;
+     text-align: center;
+     font-size: 0.7em;
+ }
+
+ .selectCharacter{
+       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.9em;
+    background-color: #24171E;
+    padding: 20px;
+    height: 229px;
+     }
+     
+     .selectCharacter img{
+        width:2.8em;
+     }
+     
+
+ } */
  
