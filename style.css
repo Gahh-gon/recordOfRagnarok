@@ -7,7 +7,7 @@ body{
     display: grid;
     grid-template-areas: "header header" "main main" "footer footer"; 
     grid-template-columns: 3fr;
-    
+    grid-template-rows: 20vh ;
 
 }
 
@@ -364,33 +364,33 @@ h2 {
         @media(max-width:375px){
             .local{
        
-                width: 23em;
-                height: 255px;
-                gap: 0px;
+                width: 22em;
+                height: 199px;
+                gap: 28px;
               
                  
             }
             #persona1{
                 z-index: 1;
-                width: 90px;
+                width: 70px;
                 
                      
                 }
                 #persona2{
                     z-index: 1;
-                    width:90px;
+                    width:70px;
                 }   
             .selectCharacter{
-                gap: 0.8em;
+                gap: 2em;
             }
             .humanLine img ,.humanLine1 img, .humanLine2 img{
-                width: 2.9em;
+                width: 2.7em;
                 
              }
             
             
              .godLine img ,.godLine1 img, .godLine2 img{
-                width: 2.9em;
+                width: 2.7em;
                 
              }
             .infoBasicH div{
